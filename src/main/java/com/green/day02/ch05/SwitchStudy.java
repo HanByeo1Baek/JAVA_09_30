@@ -7,7 +7,7 @@ public class SwitchStudy {
         String name2 = new String("홍길동");
 
         System.out.printf("name : %s\n", name);
-        System.out.printf("name : %s\n", name2);
+        System.out.printf("name2 : %s\n", name2);
         System.out.printf("name == name2 : %b\n", name == name2);
         System.out.printf("name.equals(name2) : %b\n", name.equals(name2));
 
