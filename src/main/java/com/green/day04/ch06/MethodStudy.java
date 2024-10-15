@@ -20,7 +20,7 @@ public class MethodStudy {
     - 비 void 메소드 : 리턴하는 값이 있다. ( 결과값이 있다.)
      */
     public static void main(String[] args) {
-        sum(5, 7); // sum메소드 호출
+        sum(5, 7); // sum메소드 호출 ()안에 들어가는 건 인자, argument
         sum(15, 17); // sum메소드 호출
         int result = returnSum(5, 7);
         System.out.println("result : " + result);
