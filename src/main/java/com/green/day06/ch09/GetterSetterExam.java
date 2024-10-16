@@ -9,7 +9,6 @@ public class GetterSetterExam {
         System.out.printf("name : %s\nage : %d\nheight : %.1f\n",
                         s1.getName(), s1.getAge(), s1.getHeight());
 
-
         Student s2 = new Student(); // s2 객체
         s2.setName("신사임당");
         s2.setAge(24);
