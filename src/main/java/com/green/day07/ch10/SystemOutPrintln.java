@@ -1,4 +1,4 @@
-package com.green.Day07.ch10;
+package com.green.day07.ch10;
 
 import java.io.PrintStream;
 

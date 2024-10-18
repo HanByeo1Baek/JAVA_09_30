@@ -11,26 +11,15 @@ public class ShuffleArray {
         }
 
         //0~19 랜덤값
-        int n = 0;
-        int temp = 0;
-        System.out.println(Arrays.toString(arr));
+
+        System.out.println("셔플 전 : " + Arrays.toString(arr));
         for(int i=0; i<arr.length; i++){
-            int rIdx = (int)(Math.random()*arr.length)+1;
-            temp = arr[i];
-            arr[i] = rIdx;
-            for(int k=0; k<i; k++){
-                n = arr[k];
-
-                if(temp == (k+1)){
-                    i--;
-                }
-                if(n == rIdx){
-                    i--;
-                }
-            }
+            int rIdx = (int)(Math.random()*arr.length);
+            int temp = arr[i];
+            arr[i] = arr[rIdx];
+            arr[rIdx] = temp;
         }
-
-        System.out.println(Arrays.toString(arr));
+        System.out.println("셔플 후 : " + Arrays.toString(arr));
 
     }
 }

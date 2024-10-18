@@ -1,4 +1,4 @@
-package com.green.Day07.ch07;
+package com.green.day07.ch07;
 
 class BankAccount2 {
     private String accNumber; // 계좌번호

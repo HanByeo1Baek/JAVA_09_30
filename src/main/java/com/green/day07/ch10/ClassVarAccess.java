@@ -1,4 +1,4 @@
-package com.green.Day07.ch10;
+package com.green.day07.ch10;
 
 public class ClassVarAccess {
     public static void main(String[] args) {

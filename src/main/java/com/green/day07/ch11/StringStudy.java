@@ -1,6 +1,4 @@
-package com.green.Day07.ch11;
-
-import java.util.Locale;
+package com.green.day07.ch11;
 
 public class StringStudy {
     public static void main(String[] args) {
