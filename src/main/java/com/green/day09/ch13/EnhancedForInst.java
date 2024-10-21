@@ -52,7 +52,8 @@ class Product{
     public int getPrice() {
         return price;
     }
-
+    //오버라이딩
+    // 애노테이션, 오버라이드 애노테이션을 작성하면 실수방지 기능이 있다.
     public String toString(){
          //return "제품명 : " + name + ", 가격 : " + price + "원";
         return String.format("제품명 : %s, 가격 : %,d원", name, price);
