@@ -9,7 +9,7 @@ public class SuperSubStatic {
 
     }
 }
-
+// 하나의 자바 파일에는 하나의 public class 만 가질 수 있다.
 class SuperCLS{
     protected static int count;
     SuperCLS(){
