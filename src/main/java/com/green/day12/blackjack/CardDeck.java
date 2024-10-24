@@ -76,7 +76,12 @@ public class CardDeck {
             cards[rIdx] = temp;
         }
     }
+
+    //주소값 하나씩 리턴, 리턴 주소값 지워야되고, selectedIdx 이용하여 해결
     public Card draw(){
+        if(selectedIdx == 52){
+            return null;
+        }
         Card c = cards[selectedIdx];
         cards[selectedIdx] = null;
         selectedIdx++;
