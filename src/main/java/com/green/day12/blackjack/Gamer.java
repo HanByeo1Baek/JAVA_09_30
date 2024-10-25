@@ -8,7 +8,7 @@ public class Gamer {
     //ArrayList 사용할거임
     //멤버필드 선언, 변수명은 cards
     private final List<Card> cards;
-    private int point;
+    protected int point;
 
     public Gamer(){
         cards = new ArrayList();
@@ -39,5 +39,7 @@ public class Gamer {
         return cards;
     }
 
-
+    public int getPoint(){
+        return point;
+    }
 }

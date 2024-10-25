@@ -1,6 +1,5 @@
 package com.green.day12.blackjack;
 
-
 import java.util.List;
 
 public class CardTest {
@@ -29,6 +28,8 @@ class CardTest2{
 
         gamer.showYourCards();
 
+        System.out.println(gamer.getPoint());
+
         List<Card> list = gamer.openCards();
         System.out.println(list);
     }
@@ -40,8 +41,38 @@ class cardsTest3{
         Dealer dealer = new Dealer();
         dealer.receiveCard(cd.draw());
         dealer.receiveCard(cd.draw());
-        dealer.receiveCard(cd.draw());
+        dealer.showYourCards();
+        System.out.println(dealer.getPoint());
+        dealer.needMoreCard(cd);
+        System.out.println(dealer.getPoint());
         dealer.showYourCards();
 
+
+
+    }
+}
+
+class cardTest4{
+    public static void main(String[] args) {
+        CardDeck gcd = new CardDeck();
+        CardDeck dcd = new CardDeck();
+
+        Gamer gamer = new Gamer();
+        Dealer dealer = new Dealer();
+
+        gamer.receiveCard(gcd.draw());
+        gamer.receiveCard(gcd.draw());
+
+        dealer.receiveCard(dcd.draw());
+        dealer.receiveCard(dcd.draw());
+
+        gamer.showYourCards();
+        System.out.println("gamer : " + gamer.getPoint());
+        dealer.showYourCards();
+        System.out.println("dealer : " + dealer.getPoint());
+        dealer.needMoreCard(gcd);
+        System.out.println("dealer : " + dealer.getPoint());
+        Rule rule = new Rule();
+        rule.getWinner(dealer, gamer);
     }
 }
