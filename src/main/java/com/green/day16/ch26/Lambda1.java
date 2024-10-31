@@ -17,7 +17,7 @@ public class Lambda1 {
     }
 }
 
-@FunctionalInterface
+@FunctionalInterface // 추상메소드를 하나만 갖고 있다는 걸 알 수 있음
 interface PrintableVer2 {
     void print(String str);
 }

@@ -5,12 +5,12 @@ public class Homework {
         Scanner s = new Scanner(System.in);
         Student[][] stu = new Student[10][5];
 
+        String name = s.nextLine();
+        int phone = s.nextInt();
+        String dept = s.nextLine();
+        int grade = s.nextInt();
+        int sn = s.nextInt();
         for(int i=0; i< stu.length; i++){
-            String name = s.nextLine();
-            int phone = s.nextInt();
-            String dept = s.nextLine();
-            int grade = s.nextInt();
-            int sn = s.nextInt();
             for(int j=0; j<stu[i].length; j++){
                 stu[i][j] = new Student(name, phone, dept, grade, sn);
             }
@@ -21,12 +21,12 @@ public class Homework {
 
         Professor[] pro = new Professor[3];
 
+        String name1 = s.nextLine();
+        int phone1 = s.nextInt();
+        String dept1 = s.nextLine();
         for(int i=0; i<pro.length; i++){
-            String name = s.nextLine();
-            int phone = s.nextInt();
-            String dept = s.nextLine();
 
-            pro[i] = new Professor(name, phone, dept);
+            pro[i] = new Professor(name1, phone1, dept1);
         }
 
         for(Professor item : pro){
